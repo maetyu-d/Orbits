@@ -4,7 +4,7 @@
 class SpiralTimelineApplication : public juce::JUCEApplication
 {
 public:
-    const juce::String getApplicationName() override { return "Spiral Synth Timeline"; }
+    const juce::String getApplicationName() override { return "Orbits"; }
     const juce::String getApplicationVersion() override { return "0.1.0"; }
 
     void initialise(const juce::String& /*commandLine*/) override
