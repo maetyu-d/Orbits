@@ -1,6 +1,6 @@
 # Orbits
 
-A realtime JUCE app for sequencing Python-based synth scripts on spiral timelines that can be of independent tempo, time signature, and shape. Double click and drag to place a line across the playhead path of an active spiral (track), and then select the sound (.py synthesis file) that this line represents. Whenever the spiral's playhead crosses the line, the sound will be played.
+A realtime JUCE app for sequencing Python-based synth scripts on spiral timelines that can be of independent tempo, time signature, and shape. Double click and drag to place a line across the playhead path of an active spiral (track), and then select the sound (.py synthesis file) that this line represents. Whenever the spiral's playhead crosses the line, the sound will be played. Spirals (tracks) can have many lines placed, and you can have many tracks.
 
 ![](https://github.com/maetyu-d/Orbits/blob/main/Screenshot%202026-02-10%20at%2014.00.46.png)
 
