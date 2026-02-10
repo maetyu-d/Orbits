@@ -1,4 +1,4 @@
-# Spiral Synth Timeline (JUCE, macOS, C++)
+# Orbits
 
 A realtime JUCE app for sequencing Python-based synth scripts on spiral timelines.
 
