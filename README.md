@@ -2,6 +2,8 @@
 
 A realtime JUCE app for sequencing Python-based synth scripts on spiral timelines.
 
+![](https://github.com/maetyu-d/Orbits/blob/main/Screenshot%202026-02-10%20at%2014.00.46.png)
+
 ## What this prototype does
 
 - Multiple spiral tracks, each with independent:
