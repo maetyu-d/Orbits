@@ -23,7 +23,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/VerifyGlobs.cmake"
   "CMakeFiles/cmake.verify_globs"
   "JUCE/tools/JUCEToolsExport.cmake"
-  "SpiralSynthTimeline_artefacts/JuceLibraryCode/SpiralSynthTimeline/Info.plist"
+  "Orbits_artefacts/JuceLibraryCode/Orbits/Info.plist"
   "/opt/homebrew/share/cmake/Modules/BasicConfigVersion-ExactVersion.cmake.in"
   "/opt/homebrew/share/cmake/Modules/CMakeCInformation.cmake"
   "/opt/homebrew/share/cmake/Modules/CMakeCXXInformation.cmake"
@@ -68,10 +68,10 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
-  "SpiralSynthTimeline_artefacts/JuceLibraryCode/Debug/Defs.txt"
-  "SpiralSynthTimeline_artefacts/Debug/Spiral Synth Timeline.app/Contents/MacOS"
-  "SpiralSynthTimeline_artefacts/Debug/Spiral Synth Timeline.app/Contents/Info.plist"
-  "SpiralSynthTimeline_artefacts/Debug/Spiral Synth Timeline.app/Contents/Info.plist"
+  "Orbits_artefacts/JuceLibraryCode/Debug/Defs.txt"
+  "Orbits_artefacts/Debug/Orbits.app/Contents/MacOS"
+  "Orbits_artefacts/Debug/Orbits.app/Contents/Info.plist"
+  "Orbits_artefacts/Debug/Orbits.app/Contents/Info.plist"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "JUCE/JUCEConfigVersion.cmake"
   "JUCE/JUCEConfig.cmake"
@@ -84,5 +84,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/SpiralSynthTimeline.dir/DependInfo.cmake"
+  "CMakeFiles/Orbits.dir/DependInfo.cmake"
   )

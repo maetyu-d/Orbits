@@ -163,24 +163,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named SpiralSynthTimeline
+# Target rules for targets named Orbits
 
 # Build rule for target.
-SpiralSynthTimeline: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SpiralSynthTimeline
-.PHONY : SpiralSynthTimeline
+Orbits: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Orbits
+.PHONY : Orbits
 
 # fast build rule for target.
-SpiralSynthTimeline/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/build
-.PHONY : SpiralSynthTimeline/fast
+Orbits/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/build
+.PHONY : Orbits/fast
 
 JUCE/modules/juce_audio_basics/juce_audio_basics.o: JUCE/modules/juce_audio_basics/juce_audio_basics.mm.o
 .PHONY : JUCE/modules/juce_audio_basics/juce_audio_basics.o
 
 # target to build an object file
 JUCE/modules/juce_audio_basics/juce_audio_basics.mm.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/JUCE/modules/juce_audio_basics/juce_audio_basics.mm.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/JUCE/modules/juce_audio_basics/juce_audio_basics.mm.o
 .PHONY : JUCE/modules/juce_audio_basics/juce_audio_basics.mm.o
 
 JUCE/modules/juce_audio_basics/juce_audio_basics.i: JUCE/modules/juce_audio_basics/juce_audio_basics.mm.i
@@ -188,7 +188,7 @@ JUCE/modules/juce_audio_basics/juce_audio_basics.i: JUCE/modules/juce_audio_basi
 
 # target to preprocess a source file
 JUCE/modules/juce_audio_basics/juce_audio_basics.mm.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/JUCE/modules/juce_audio_basics/juce_audio_basics.mm.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/JUCE/modules/juce_audio_basics/juce_audio_basics.mm.i
 .PHONY : JUCE/modules/juce_audio_basics/juce_audio_basics.mm.i
 
 JUCE/modules/juce_audio_basics/juce_audio_basics.s: JUCE/modules/juce_audio_basics/juce_audio_basics.mm.s
@@ -196,7 +196,7 @@ JUCE/modules/juce_audio_basics/juce_audio_basics.s: JUCE/modules/juce_audio_basi
 
 # target to generate assembly for a file
 JUCE/modules/juce_audio_basics/juce_audio_basics.mm.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/JUCE/modules/juce_audio_basics/juce_audio_basics.mm.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/JUCE/modules/juce_audio_basics/juce_audio_basics.mm.s
 .PHONY : JUCE/modules/juce_audio_basics/juce_audio_basics.mm.s
 
 JUCE/modules/juce_audio_devices/juce_audio_devices.o: JUCE/modules/juce_audio_devices/juce_audio_devices.mm.o
@@ -204,7 +204,7 @@ JUCE/modules/juce_audio_devices/juce_audio_devices.o: JUCE/modules/juce_audio_de
 
 # target to build an object file
 JUCE/modules/juce_audio_devices/juce_audio_devices.mm.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/JUCE/modules/juce_audio_devices/juce_audio_devices.mm.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/JUCE/modules/juce_audio_devices/juce_audio_devices.mm.o
 .PHONY : JUCE/modules/juce_audio_devices/juce_audio_devices.mm.o
 
 JUCE/modules/juce_audio_devices/juce_audio_devices.i: JUCE/modules/juce_audio_devices/juce_audio_devices.mm.i
@@ -212,7 +212,7 @@ JUCE/modules/juce_audio_devices/juce_audio_devices.i: JUCE/modules/juce_audio_de
 
 # target to preprocess a source file
 JUCE/modules/juce_audio_devices/juce_audio_devices.mm.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/JUCE/modules/juce_audio_devices/juce_audio_devices.mm.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/JUCE/modules/juce_audio_devices/juce_audio_devices.mm.i
 .PHONY : JUCE/modules/juce_audio_devices/juce_audio_devices.mm.i
 
 JUCE/modules/juce_audio_devices/juce_audio_devices.s: JUCE/modules/juce_audio_devices/juce_audio_devices.mm.s
@@ -220,7 +220,7 @@ JUCE/modules/juce_audio_devices/juce_audio_devices.s: JUCE/modules/juce_audio_de
 
 # target to generate assembly for a file
 JUCE/modules/juce_audio_devices/juce_audio_devices.mm.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/JUCE/modules/juce_audio_devices/juce_audio_devices.mm.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/JUCE/modules/juce_audio_devices/juce_audio_devices.mm.s
 .PHONY : JUCE/modules/juce_audio_devices/juce_audio_devices.mm.s
 
 JUCE/modules/juce_audio_formats/juce_audio_formats.o: JUCE/modules/juce_audio_formats/juce_audio_formats.mm.o
@@ -228,7 +228,7 @@ JUCE/modules/juce_audio_formats/juce_audio_formats.o: JUCE/modules/juce_audio_fo
 
 # target to build an object file
 JUCE/modules/juce_audio_formats/juce_audio_formats.mm.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/JUCE/modules/juce_audio_formats/juce_audio_formats.mm.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/JUCE/modules/juce_audio_formats/juce_audio_formats.mm.o
 .PHONY : JUCE/modules/juce_audio_formats/juce_audio_formats.mm.o
 
 JUCE/modules/juce_audio_formats/juce_audio_formats.i: JUCE/modules/juce_audio_formats/juce_audio_formats.mm.i
@@ -236,7 +236,7 @@ JUCE/modules/juce_audio_formats/juce_audio_formats.i: JUCE/modules/juce_audio_fo
 
 # target to preprocess a source file
 JUCE/modules/juce_audio_formats/juce_audio_formats.mm.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/JUCE/modules/juce_audio_formats/juce_audio_formats.mm.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/JUCE/modules/juce_audio_formats/juce_audio_formats.mm.i
 .PHONY : JUCE/modules/juce_audio_formats/juce_audio_formats.mm.i
 
 JUCE/modules/juce_audio_formats/juce_audio_formats.s: JUCE/modules/juce_audio_formats/juce_audio_formats.mm.s
@@ -244,7 +244,7 @@ JUCE/modules/juce_audio_formats/juce_audio_formats.s: JUCE/modules/juce_audio_fo
 
 # target to generate assembly for a file
 JUCE/modules/juce_audio_formats/juce_audio_formats.mm.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/JUCE/modules/juce_audio_formats/juce_audio_formats.mm.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/JUCE/modules/juce_audio_formats/juce_audio_formats.mm.s
 .PHONY : JUCE/modules/juce_audio_formats/juce_audio_formats.mm.s
 
 JUCE/modules/juce_audio_processors/juce_audio_processors.o: JUCE/modules/juce_audio_processors/juce_audio_processors.mm.o
@@ -252,7 +252,7 @@ JUCE/modules/juce_audio_processors/juce_audio_processors.o: JUCE/modules/juce_au
 
 # target to build an object file
 JUCE/modules/juce_audio_processors/juce_audio_processors.mm.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/JUCE/modules/juce_audio_processors/juce_audio_processors.mm.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/JUCE/modules/juce_audio_processors/juce_audio_processors.mm.o
 .PHONY : JUCE/modules/juce_audio_processors/juce_audio_processors.mm.o
 
 JUCE/modules/juce_audio_processors/juce_audio_processors.i: JUCE/modules/juce_audio_processors/juce_audio_processors.mm.i
@@ -260,7 +260,7 @@ JUCE/modules/juce_audio_processors/juce_audio_processors.i: JUCE/modules/juce_au
 
 # target to preprocess a source file
 JUCE/modules/juce_audio_processors/juce_audio_processors.mm.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/JUCE/modules/juce_audio_processors/juce_audio_processors.mm.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/JUCE/modules/juce_audio_processors/juce_audio_processors.mm.i
 .PHONY : JUCE/modules/juce_audio_processors/juce_audio_processors.mm.i
 
 JUCE/modules/juce_audio_processors/juce_audio_processors.s: JUCE/modules/juce_audio_processors/juce_audio_processors.mm.s
@@ -268,7 +268,7 @@ JUCE/modules/juce_audio_processors/juce_audio_processors.s: JUCE/modules/juce_au
 
 # target to generate assembly for a file
 JUCE/modules/juce_audio_processors/juce_audio_processors.mm.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/JUCE/modules/juce_audio_processors/juce_audio_processors.mm.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/JUCE/modules/juce_audio_processors/juce_audio_processors.mm.s
 .PHONY : JUCE/modules/juce_audio_processors/juce_audio_processors.mm.s
 
 JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless.o: JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless.mm.o
@@ -276,7 +276,7 @@ JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless.o: JU
 
 # target to build an object file
 JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless.mm.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless.mm.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless.mm.o
 .PHONY : JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless.mm.o
 
 JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless.i: JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless.mm.i
@@ -284,7 +284,7 @@ JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless.i: JU
 
 # target to preprocess a source file
 JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless.mm.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless.mm.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless.mm.i
 .PHONY : JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless.mm.i
 
 JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless.s: JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless.mm.s
@@ -292,7 +292,7 @@ JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless.s: JU
 
 # target to generate assembly for a file
 JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless.mm.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless.mm.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless.mm.s
 .PHONY : JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless.mm.s
 
 JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.o: JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.cpp.o
@@ -300,7 +300,7 @@ JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.o
 
 # target to build an object file
 JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.cpp.o
 .PHONY : JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.cpp.o
 
 JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.i: JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.cpp.i
@@ -308,7 +308,7 @@ JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.i
 
 # target to preprocess a source file
 JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.cpp.i
 .PHONY : JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.cpp.i
 
 JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.s: JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.cpp.s
@@ -316,7 +316,7 @@ JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.s
 
 # target to generate assembly for a file
 JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.cpp.s
 .PHONY : JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.cpp.s
 
 JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.o: JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.cpp.o
@@ -324,7 +324,7 @@ JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_l
 
 # target to build an object file
 JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.cpp.o
 .PHONY : JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.cpp.o
 
 JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.i: JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.cpp.i
@@ -332,7 +332,7 @@ JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_l
 
 # target to preprocess a source file
 JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.cpp.i
 .PHONY : JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.cpp.i
 
 JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.s: JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.cpp.s
@@ -340,7 +340,7 @@ JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_l
 
 # target to generate assembly for a file
 JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.cpp.s
 .PHONY : JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.cpp.s
 
 JUCE/modules/juce_audio_utils/juce_audio_utils.o: JUCE/modules/juce_audio_utils/juce_audio_utils.mm.o
@@ -348,7 +348,7 @@ JUCE/modules/juce_audio_utils/juce_audio_utils.o: JUCE/modules/juce_audio_utils/
 
 # target to build an object file
 JUCE/modules/juce_audio_utils/juce_audio_utils.mm.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/JUCE/modules/juce_audio_utils/juce_audio_utils.mm.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/JUCE/modules/juce_audio_utils/juce_audio_utils.mm.o
 .PHONY : JUCE/modules/juce_audio_utils/juce_audio_utils.mm.o
 
 JUCE/modules/juce_audio_utils/juce_audio_utils.i: JUCE/modules/juce_audio_utils/juce_audio_utils.mm.i
@@ -356,7 +356,7 @@ JUCE/modules/juce_audio_utils/juce_audio_utils.i: JUCE/modules/juce_audio_utils/
 
 # target to preprocess a source file
 JUCE/modules/juce_audio_utils/juce_audio_utils.mm.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/JUCE/modules/juce_audio_utils/juce_audio_utils.mm.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/JUCE/modules/juce_audio_utils/juce_audio_utils.mm.i
 .PHONY : JUCE/modules/juce_audio_utils/juce_audio_utils.mm.i
 
 JUCE/modules/juce_audio_utils/juce_audio_utils.s: JUCE/modules/juce_audio_utils/juce_audio_utils.mm.s
@@ -364,7 +364,7 @@ JUCE/modules/juce_audio_utils/juce_audio_utils.s: JUCE/modules/juce_audio_utils/
 
 # target to generate assembly for a file
 JUCE/modules/juce_audio_utils/juce_audio_utils.mm.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/JUCE/modules/juce_audio_utils/juce_audio_utils.mm.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/JUCE/modules/juce_audio_utils/juce_audio_utils.mm.s
 .PHONY : JUCE/modules/juce_audio_utils/juce_audio_utils.mm.s
 
 JUCE/modules/juce_core/juce_core.o: JUCE/modules/juce_core/juce_core.mm.o
@@ -372,7 +372,7 @@ JUCE/modules/juce_core/juce_core.o: JUCE/modules/juce_core/juce_core.mm.o
 
 # target to build an object file
 JUCE/modules/juce_core/juce_core.mm.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/JUCE/modules/juce_core/juce_core.mm.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/JUCE/modules/juce_core/juce_core.mm.o
 .PHONY : JUCE/modules/juce_core/juce_core.mm.o
 
 JUCE/modules/juce_core/juce_core.i: JUCE/modules/juce_core/juce_core.mm.i
@@ -380,7 +380,7 @@ JUCE/modules/juce_core/juce_core.i: JUCE/modules/juce_core/juce_core.mm.i
 
 # target to preprocess a source file
 JUCE/modules/juce_core/juce_core.mm.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/JUCE/modules/juce_core/juce_core.mm.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/JUCE/modules/juce_core/juce_core.mm.i
 .PHONY : JUCE/modules/juce_core/juce_core.mm.i
 
 JUCE/modules/juce_core/juce_core.s: JUCE/modules/juce_core/juce_core.mm.s
@@ -388,7 +388,7 @@ JUCE/modules/juce_core/juce_core.s: JUCE/modules/juce_core/juce_core.mm.s
 
 # target to generate assembly for a file
 JUCE/modules/juce_core/juce_core.mm.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/JUCE/modules/juce_core/juce_core.mm.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/JUCE/modules/juce_core/juce_core.mm.s
 .PHONY : JUCE/modules/juce_core/juce_core.mm.s
 
 JUCE/modules/juce_core/juce_core_CompilationTime.o: JUCE/modules/juce_core/juce_core_CompilationTime.cpp.o
@@ -396,7 +396,7 @@ JUCE/modules/juce_core/juce_core_CompilationTime.o: JUCE/modules/juce_core/juce_
 
 # target to build an object file
 JUCE/modules/juce_core/juce_core_CompilationTime.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/JUCE/modules/juce_core/juce_core_CompilationTime.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/JUCE/modules/juce_core/juce_core_CompilationTime.cpp.o
 .PHONY : JUCE/modules/juce_core/juce_core_CompilationTime.cpp.o
 
 JUCE/modules/juce_core/juce_core_CompilationTime.i: JUCE/modules/juce_core/juce_core_CompilationTime.cpp.i
@@ -404,7 +404,7 @@ JUCE/modules/juce_core/juce_core_CompilationTime.i: JUCE/modules/juce_core/juce_
 
 # target to preprocess a source file
 JUCE/modules/juce_core/juce_core_CompilationTime.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/JUCE/modules/juce_core/juce_core_CompilationTime.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/JUCE/modules/juce_core/juce_core_CompilationTime.cpp.i
 .PHONY : JUCE/modules/juce_core/juce_core_CompilationTime.cpp.i
 
 JUCE/modules/juce_core/juce_core_CompilationTime.s: JUCE/modules/juce_core/juce_core_CompilationTime.cpp.s
@@ -412,7 +412,7 @@ JUCE/modules/juce_core/juce_core_CompilationTime.s: JUCE/modules/juce_core/juce_
 
 # target to generate assembly for a file
 JUCE/modules/juce_core/juce_core_CompilationTime.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/JUCE/modules/juce_core/juce_core_CompilationTime.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/JUCE/modules/juce_core/juce_core_CompilationTime.cpp.s
 .PHONY : JUCE/modules/juce_core/juce_core_CompilationTime.cpp.s
 
 JUCE/modules/juce_data_structures/juce_data_structures.o: JUCE/modules/juce_data_structures/juce_data_structures.mm.o
@@ -420,7 +420,7 @@ JUCE/modules/juce_data_structures/juce_data_structures.o: JUCE/modules/juce_data
 
 # target to build an object file
 JUCE/modules/juce_data_structures/juce_data_structures.mm.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/JUCE/modules/juce_data_structures/juce_data_structures.mm.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/JUCE/modules/juce_data_structures/juce_data_structures.mm.o
 .PHONY : JUCE/modules/juce_data_structures/juce_data_structures.mm.o
 
 JUCE/modules/juce_data_structures/juce_data_structures.i: JUCE/modules/juce_data_structures/juce_data_structures.mm.i
@@ -428,7 +428,7 @@ JUCE/modules/juce_data_structures/juce_data_structures.i: JUCE/modules/juce_data
 
 # target to preprocess a source file
 JUCE/modules/juce_data_structures/juce_data_structures.mm.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/JUCE/modules/juce_data_structures/juce_data_structures.mm.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/JUCE/modules/juce_data_structures/juce_data_structures.mm.i
 .PHONY : JUCE/modules/juce_data_structures/juce_data_structures.mm.i
 
 JUCE/modules/juce_data_structures/juce_data_structures.s: JUCE/modules/juce_data_structures/juce_data_structures.mm.s
@@ -436,7 +436,7 @@ JUCE/modules/juce_data_structures/juce_data_structures.s: JUCE/modules/juce_data
 
 # target to generate assembly for a file
 JUCE/modules/juce_data_structures/juce_data_structures.mm.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/JUCE/modules/juce_data_structures/juce_data_structures.mm.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/JUCE/modules/juce_data_structures/juce_data_structures.mm.s
 .PHONY : JUCE/modules/juce_data_structures/juce_data_structures.mm.s
 
 JUCE/modules/juce_events/juce_events.o: JUCE/modules/juce_events/juce_events.mm.o
@@ -444,7 +444,7 @@ JUCE/modules/juce_events/juce_events.o: JUCE/modules/juce_events/juce_events.mm.
 
 # target to build an object file
 JUCE/modules/juce_events/juce_events.mm.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/JUCE/modules/juce_events/juce_events.mm.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/JUCE/modules/juce_events/juce_events.mm.o
 .PHONY : JUCE/modules/juce_events/juce_events.mm.o
 
 JUCE/modules/juce_events/juce_events.i: JUCE/modules/juce_events/juce_events.mm.i
@@ -452,7 +452,7 @@ JUCE/modules/juce_events/juce_events.i: JUCE/modules/juce_events/juce_events.mm.
 
 # target to preprocess a source file
 JUCE/modules/juce_events/juce_events.mm.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/JUCE/modules/juce_events/juce_events.mm.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/JUCE/modules/juce_events/juce_events.mm.i
 .PHONY : JUCE/modules/juce_events/juce_events.mm.i
 
 JUCE/modules/juce_events/juce_events.s: JUCE/modules/juce_events/juce_events.mm.s
@@ -460,7 +460,7 @@ JUCE/modules/juce_events/juce_events.s: JUCE/modules/juce_events/juce_events.mm.
 
 # target to generate assembly for a file
 JUCE/modules/juce_events/juce_events.mm.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/JUCE/modules/juce_events/juce_events.mm.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/JUCE/modules/juce_events/juce_events.mm.s
 .PHONY : JUCE/modules/juce_events/juce_events.mm.s
 
 JUCE/modules/juce_graphics/juce_graphics.o: JUCE/modules/juce_graphics/juce_graphics.mm.o
@@ -468,7 +468,7 @@ JUCE/modules/juce_graphics/juce_graphics.o: JUCE/modules/juce_graphics/juce_grap
 
 # target to build an object file
 JUCE/modules/juce_graphics/juce_graphics.mm.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/JUCE/modules/juce_graphics/juce_graphics.mm.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/JUCE/modules/juce_graphics/juce_graphics.mm.o
 .PHONY : JUCE/modules/juce_graphics/juce_graphics.mm.o
 
 JUCE/modules/juce_graphics/juce_graphics.i: JUCE/modules/juce_graphics/juce_graphics.mm.i
@@ -476,7 +476,7 @@ JUCE/modules/juce_graphics/juce_graphics.i: JUCE/modules/juce_graphics/juce_grap
 
 # target to preprocess a source file
 JUCE/modules/juce_graphics/juce_graphics.mm.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/JUCE/modules/juce_graphics/juce_graphics.mm.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/JUCE/modules/juce_graphics/juce_graphics.mm.i
 .PHONY : JUCE/modules/juce_graphics/juce_graphics.mm.i
 
 JUCE/modules/juce_graphics/juce_graphics.s: JUCE/modules/juce_graphics/juce_graphics.mm.s
@@ -484,7 +484,7 @@ JUCE/modules/juce_graphics/juce_graphics.s: JUCE/modules/juce_graphics/juce_grap
 
 # target to generate assembly for a file
 JUCE/modules/juce_graphics/juce_graphics.mm.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/JUCE/modules/juce_graphics/juce_graphics.mm.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/JUCE/modules/juce_graphics/juce_graphics.mm.s
 .PHONY : JUCE/modules/juce_graphics/juce_graphics.mm.s
 
 JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.o: JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.o
@@ -492,7 +492,7 @@ JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.o: JUCE/modules/juce_graphics/
 
 # target to build an object file
 JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.o
 .PHONY : JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.o
 
 JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.i: JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.i
@@ -500,7 +500,7 @@ JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.i: JUCE/modules/juce_graphics/
 
 # target to preprocess a source file
 JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.i
 .PHONY : JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.i
 
 JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.s: JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.s
@@ -508,7 +508,7 @@ JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.s: JUCE/modules/juce_graphics/
 
 # target to generate assembly for a file
 JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.s
 .PHONY : JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.s
 
 JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.o: JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c.o
@@ -516,7 +516,7 @@ JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.o: JUCE/modules/juce_graphics
 
 # target to build an object file
 JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c.o
 .PHONY : JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c.o
 
 JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.i: JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c.i
@@ -524,7 +524,7 @@ JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.i: JUCE/modules/juce_graphics
 
 # target to preprocess a source file
 JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c.i
 .PHONY : JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c.i
 
 JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.s: JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c.s
@@ -532,7 +532,7 @@ JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.s: JUCE/modules/juce_graphics
 
 # target to generate assembly for a file
 JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c.s
 .PHONY : JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c.s
 
 JUCE/modules/juce_gui_basics/juce_gui_basics.o: JUCE/modules/juce_gui_basics/juce_gui_basics.mm.o
@@ -540,7 +540,7 @@ JUCE/modules/juce_gui_basics/juce_gui_basics.o: JUCE/modules/juce_gui_basics/juc
 
 # target to build an object file
 JUCE/modules/juce_gui_basics/juce_gui_basics.mm.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/JUCE/modules/juce_gui_basics/juce_gui_basics.mm.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/JUCE/modules/juce_gui_basics/juce_gui_basics.mm.o
 .PHONY : JUCE/modules/juce_gui_basics/juce_gui_basics.mm.o
 
 JUCE/modules/juce_gui_basics/juce_gui_basics.i: JUCE/modules/juce_gui_basics/juce_gui_basics.mm.i
@@ -548,7 +548,7 @@ JUCE/modules/juce_gui_basics/juce_gui_basics.i: JUCE/modules/juce_gui_basics/juc
 
 # target to preprocess a source file
 JUCE/modules/juce_gui_basics/juce_gui_basics.mm.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/JUCE/modules/juce_gui_basics/juce_gui_basics.mm.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/JUCE/modules/juce_gui_basics/juce_gui_basics.mm.i
 .PHONY : JUCE/modules/juce_gui_basics/juce_gui_basics.mm.i
 
 JUCE/modules/juce_gui_basics/juce_gui_basics.s: JUCE/modules/juce_gui_basics/juce_gui_basics.mm.s
@@ -556,7 +556,7 @@ JUCE/modules/juce_gui_basics/juce_gui_basics.s: JUCE/modules/juce_gui_basics/juc
 
 # target to generate assembly for a file
 JUCE/modules/juce_gui_basics/juce_gui_basics.mm.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/JUCE/modules/juce_gui_basics/juce_gui_basics.mm.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/JUCE/modules/juce_gui_basics/juce_gui_basics.mm.s
 .PHONY : JUCE/modules/juce_gui_basics/juce_gui_basics.mm.s
 
 JUCE/modules/juce_gui_extra/juce_gui_extra.o: JUCE/modules/juce_gui_extra/juce_gui_extra.mm.o
@@ -564,7 +564,7 @@ JUCE/modules/juce_gui_extra/juce_gui_extra.o: JUCE/modules/juce_gui_extra/juce_g
 
 # target to build an object file
 JUCE/modules/juce_gui_extra/juce_gui_extra.mm.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/JUCE/modules/juce_gui_extra/juce_gui_extra.mm.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/JUCE/modules/juce_gui_extra/juce_gui_extra.mm.o
 .PHONY : JUCE/modules/juce_gui_extra/juce_gui_extra.mm.o
 
 JUCE/modules/juce_gui_extra/juce_gui_extra.i: JUCE/modules/juce_gui_extra/juce_gui_extra.mm.i
@@ -572,7 +572,7 @@ JUCE/modules/juce_gui_extra/juce_gui_extra.i: JUCE/modules/juce_gui_extra/juce_g
 
 # target to preprocess a source file
 JUCE/modules/juce_gui_extra/juce_gui_extra.mm.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/JUCE/modules/juce_gui_extra/juce_gui_extra.mm.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/JUCE/modules/juce_gui_extra/juce_gui_extra.mm.i
 .PHONY : JUCE/modules/juce_gui_extra/juce_gui_extra.mm.i
 
 JUCE/modules/juce_gui_extra/juce_gui_extra.s: JUCE/modules/juce_gui_extra/juce_gui_extra.mm.s
@@ -580,7 +580,7 @@ JUCE/modules/juce_gui_extra/juce_gui_extra.s: JUCE/modules/juce_gui_extra/juce_g
 
 # target to generate assembly for a file
 JUCE/modules/juce_gui_extra/juce_gui_extra.mm.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/JUCE/modules/juce_gui_extra/juce_gui_extra.mm.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/JUCE/modules/juce_gui_extra/juce_gui_extra.mm.s
 .PHONY : JUCE/modules/juce_gui_extra/juce_gui_extra.mm.s
 
 Source/Main.o: Source/Main.cpp.o
@@ -588,7 +588,7 @@ Source/Main.o: Source/Main.cpp.o
 
 # target to build an object file
 Source/Main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/Source/Main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/Source/Main.cpp.o
 .PHONY : Source/Main.cpp.o
 
 Source/Main.i: Source/Main.cpp.i
@@ -596,7 +596,7 @@ Source/Main.i: Source/Main.cpp.i
 
 # target to preprocess a source file
 Source/Main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/Source/Main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/Source/Main.cpp.i
 .PHONY : Source/Main.cpp.i
 
 Source/Main.s: Source/Main.cpp.s
@@ -604,7 +604,7 @@ Source/Main.s: Source/Main.cpp.s
 
 # target to generate assembly for a file
 Source/Main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/Source/Main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/Source/Main.cpp.s
 .PHONY : Source/Main.cpp.s
 
 Source/MainComponent.o: Source/MainComponent.cpp.o
@@ -612,7 +612,7 @@ Source/MainComponent.o: Source/MainComponent.cpp.o
 
 # target to build an object file
 Source/MainComponent.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/Source/MainComponent.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/Source/MainComponent.cpp.o
 .PHONY : Source/MainComponent.cpp.o
 
 Source/MainComponent.i: Source/MainComponent.cpp.i
@@ -620,7 +620,7 @@ Source/MainComponent.i: Source/MainComponent.cpp.i
 
 # target to preprocess a source file
 Source/MainComponent.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/Source/MainComponent.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/Source/MainComponent.cpp.i
 .PHONY : Source/MainComponent.cpp.i
 
 Source/MainComponent.s: Source/MainComponent.cpp.s
@@ -628,7 +628,7 @@ Source/MainComponent.s: Source/MainComponent.cpp.s
 
 # target to generate assembly for a file
 Source/MainComponent.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/Source/MainComponent.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/Source/MainComponent.cpp.s
 .PHONY : Source/MainComponent.cpp.s
 
 Source/SpiralSequencerEngine.o: Source/SpiralSequencerEngine.cpp.o
@@ -636,7 +636,7 @@ Source/SpiralSequencerEngine.o: Source/SpiralSequencerEngine.cpp.o
 
 # target to build an object file
 Source/SpiralSequencerEngine.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/Source/SpiralSequencerEngine.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/Source/SpiralSequencerEngine.cpp.o
 .PHONY : Source/SpiralSequencerEngine.cpp.o
 
 Source/SpiralSequencerEngine.i: Source/SpiralSequencerEngine.cpp.i
@@ -644,7 +644,7 @@ Source/SpiralSequencerEngine.i: Source/SpiralSequencerEngine.cpp.i
 
 # target to preprocess a source file
 Source/SpiralSequencerEngine.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/Source/SpiralSequencerEngine.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/Source/SpiralSequencerEngine.cpp.i
 .PHONY : Source/SpiralSequencerEngine.cpp.i
 
 Source/SpiralSequencerEngine.s: Source/SpiralSequencerEngine.cpp.s
@@ -652,7 +652,7 @@ Source/SpiralSequencerEngine.s: Source/SpiralSequencerEngine.cpp.s
 
 # target to generate assembly for a file
 Source/SpiralSequencerEngine.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/Source/SpiralSequencerEngine.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/Source/SpiralSequencerEngine.cpp.s
 .PHONY : Source/SpiralSequencerEngine.cpp.s
 
 # Help Target
@@ -667,7 +667,7 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... SpiralSynthTimeline"
+	@echo "... Orbits"
 	@echo "... JUCE/modules/juce_audio_basics/juce_audio_basics.o"
 	@echo "... JUCE/modules/juce_audio_basics/juce_audio_basics.i"
 	@echo "... JUCE/modules/juce_audio_basics/juce_audio_basics.s"

@@ -149,7 +149,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=SpiralSynthTimeline
+CMAKE_PROJECT_NAME:STATIC=Orbits
 
 //Value Computed by CMake
 CMAKE_PROJECT_SPDX_LICENSE:STATIC=
@@ -296,6 +296,15 @@ JUCE_TOOL_INSTALL_DIR:STRING=bin/JUCE-8.0.12
 //Location that overrides the default directory where our FindWebView2
 // script is looking for the *Microsoft.Web.WebView2* directory
 JUCE_WEBVIEW2_PACKAGE_LOCATION:BOOL=OFF
+
+//Value Computed by CMake
+Orbits_BINARY_DIR:STATIC=/Users/md/Downloads/Orbits/build
+
+//Value Computed by CMake
+Orbits_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+Orbits_SOURCE_DIR:STATIC=/Users/md/Downloads/Orbits
 
 //Fetch JUCE from GitHub if JUCE package is not found
 SPIRAL_TIMELINE_FETCH_JUCE:BOOL=OFF

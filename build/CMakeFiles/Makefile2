@@ -63,12 +63,12 @@ CMAKE_BINARY_DIR = /Users/md/Downloads/Orbits/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/SpiralSynthTimeline.dir/all
+all: CMakeFiles/Orbits.dir/all
 all: JUCE/all
 .PHONY : all
 
 # The main recursive "codegen" target.
-codegen: CMakeFiles/SpiralSynthTimeline.dir/codegen
+codegen: CMakeFiles/Orbits.dir/codegen
 codegen: JUCE/codegen
 .PHONY : codegen
 
@@ -77,7 +77,7 @@ preinstall: JUCE/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/SpiralSynthTimeline.dir/clean
+clean: CMakeFiles/Orbits.dir/clean
 clean: JUCE/clean
 .PHONY : clean
 
@@ -162,36 +162,36 @@ JUCE/modules/clean:
 .PHONY : JUCE/modules/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/SpiralSynthTimeline.dir
+# Target rules for target CMakeFiles/Orbits.dir
 
 # All Build rule for target.
-CMakeFiles/SpiralSynthTimeline.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/md/Downloads/Orbits/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23 "Built target SpiralSynthTimeline"
-.PHONY : CMakeFiles/SpiralSynthTimeline.dir/all
+CMakeFiles/Orbits.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/md/Downloads/Orbits/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23 "Built target Orbits"
+.PHONY : CMakeFiles/Orbits.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/SpiralSynthTimeline.dir/rule: cmake_check_build_system
+CMakeFiles/Orbits.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/md/Downloads/Orbits/build/CMakeFiles 23
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/SpiralSynthTimeline.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Orbits.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/md/Downloads/Orbits/build/CMakeFiles 0
-.PHONY : CMakeFiles/SpiralSynthTimeline.dir/rule
+.PHONY : CMakeFiles/Orbits.dir/rule
 
 # Convenience name for target.
-SpiralSynthTimeline: CMakeFiles/SpiralSynthTimeline.dir/rule
-.PHONY : SpiralSynthTimeline
+Orbits: CMakeFiles/Orbits.dir/rule
+.PHONY : Orbits
 
 # codegen rule for target.
-CMakeFiles/SpiralSynthTimeline.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/md/Downloads/Orbits/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23 "Finished codegen for target SpiralSynthTimeline"
-.PHONY : CMakeFiles/SpiralSynthTimeline.dir/codegen
+CMakeFiles/Orbits.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/md/Downloads/Orbits/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23 "Finished codegen for target Orbits"
+.PHONY : CMakeFiles/Orbits.dir/codegen
 
 # clean rule for target.
-CMakeFiles/SpiralSynthTimeline.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpiralSynthTimeline.dir/build.make CMakeFiles/SpiralSynthTimeline.dir/clean
-.PHONY : CMakeFiles/SpiralSynthTimeline.dir/clean
+CMakeFiles/Orbits.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Orbits.dir/build.make CMakeFiles/Orbits.dir/clean
+.PHONY : CMakeFiles/Orbits.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
