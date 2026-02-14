@@ -5,6 +5,12 @@
 
 namespace
 {
+bool isLikelyAudioFilePath(const juce::String& path)
+{
+    const auto ext = juce::File(path).getFileExtension().toLowerCase();
+    return ext == ".wav" || ext == ".aif" || ext == ".aiff" || ext == ".flac" || ext == ".mp3" || ext == ".ogg";
+}
+
 juce::File engineLogFile()
 {
     return juce::File::getSpecialLocation(juce::File::tempDirectory).getChildFile("orbits_engine.log");
@@ -337,10 +343,17 @@ juce::String SpiralSequencerEngine::renderSignature(const TriggerLineData& line,
                                                     int renderSampleRate) const
 {
     const auto durationMs = static_cast<int>(std::round(durationSeconds * 1000.0));
+    const auto sourceFile = juce::File(line.pythonScriptPath);
+    const auto sourceStamp = sourceFile.existsAsFile()
+        ? sourceFile.getLastModificationTime().toMilliseconds()
+        : 0;
+    const auto sourceSize = sourceFile.existsAsFile() ? sourceFile.getSize() : 0;
     return line.pythonScriptPath + "|"
            + juce::String(durationMs) + "|"
            + juce::String(renderSampleRate) + "|"
-           + juce::String(static_cast<int>(line.scriptType));
+           + juce::String(static_cast<int>(line.scriptType)) + "|"
+           + juce::String(static_cast<int64>(sourceStamp)) + "|"
+           + juce::String(static_cast<int64>(sourceSize));
 }
 
 double SpiralSequencerEngine::renderDurationForLine(const TriggerLineData& line,
@@ -398,6 +411,55 @@ void SpiralSequencerEngine::ensureRendered(const TriggerLineData& line,
         clip->warnedMissing = false;
         clip->signature = signature;
         clip->buffer.reset();
+    }
+
+    if (isLikelyAudioFilePath(line.pythonScriptPath))
+    {
+        double sourceSr = 0.0;
+        auto buffer = loadAudioFile(juce::File(line.pythonScriptPath), sourceSr);
+        const bool ready = (buffer != nullptr && buffer->getNumSamples() > 0);
+
+        const juce::SpinLock::ScopedLockType lock(cacheLock);
+        auto it = clipByLineId.find(lineKey);
+        if (it != clipByLineId.end())
+        {
+            it->second->rendering = false;
+            it->second->ready = ready;
+            it->second->sourceSampleRate = sourceSr > 0.0 ? sourceSr : static_cast<double>(renderSampleRate);
+            it->second->durationSeconds = (buffer != nullptr && sourceSr > 0.0)
+                ? (static_cast<double>(buffer->getNumSamples()) / sourceSr)
+                : 0.0;
+
+            if (it->second->signature == signature)
+            {
+                it->second->buffer = buffer;
+                it->second->warnedMissing = false;
+                it->second->waveformPreview.clearQuick();
+
+                if (buffer != nullptr && buffer->getNumSamples() > 0)
+                {
+                    constexpr int bins = 128;
+                    it->second->waveformPreview.resize(bins);
+                    const auto* data = buffer->getReadPointer(0);
+                    const int n = buffer->getNumSamples();
+
+                    for (int i = 0; i < bins; ++i)
+                    {
+                        const int idx = juce::jlimit(0, n - 1, (i * n) / bins);
+                        it->second->waveformPreview.set(i, data[idx]);
+                    }
+                }
+            }
+
+            if (!ready)
+                appendEngineLog("[render] failed/empty audio clip for " + line.pythonScriptPath);
+            else
+                appendEngineLog("[render] ready audio " + line.pythonScriptPath
+                                + " samples=" + juce::String(buffer->getNumSamples())
+                                + " sr=" + juce::String(sourceSr, 2));
+        }
+
+        return;
     }
 
     renderClipJob(lineId, signature, line.pythonScriptPath, trackIndex, durationSeconds, renderSampleRate, outputPath);
@@ -618,14 +680,18 @@ void SpiralSequencerEngine::triggerLine(const TriggerLineData& line,
 
     auto workingBuffer = voice.buffer;
 
-    if (line.scriptType == TriggerLineData::ScriptType::bar && line.cutToBarEnd)
+    if (line.scriptType == TriggerLineData::ScriptType::bar)
     {
         const auto bars = juce::jmax(0.25, track.loopBars);
         const auto barSeconds = juce::jmax(0.01, loopSeconds / bars);
-        const auto barPos = triggerPhase * bars;
-        const auto fracInBar = barPos - std::floor(barPos);
-        const auto remainSeconds = juce::jmax(0.0, (1.0 - fracInBar) * barSeconds);
-        const auto maxOutSamples = static_cast<int>(remainSeconds * hostSampleRate);
+        auto maxSeconds = barSeconds;
+        if (line.cutToBarEnd)
+        {
+            const auto barPos = triggerPhase * bars;
+            const auto fracInBar = barPos - std::floor(barPos);
+            maxSeconds = juce::jmax(0.0, (1.0 - fracInBar) * barSeconds);
+        }
+        const auto maxOutSamples = static_cast<int>(maxSeconds * hostSampleRate);
         if (maxOutSamples > 0)
         {
             const auto maxSrcSamples = static_cast<int>(std::floor(maxOutSamples * voice.ratio));

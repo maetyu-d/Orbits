@@ -7,6 +7,12 @@
 namespace
 {
 constexpr float twoPi = 6.28318530717958647692f;
+
+bool isLikelyAudioFilePath(const juce::String& path)
+{
+    const auto ext = juce::File(path).getFileExtension().toLowerCase();
+    return ext == ".wav" || ext == ".aif" || ext == ".aiff" || ext == ".flac" || ext == ".mp3" || ext == ".ogg";
+}
 constexpr float orbitWarpHarmonic = 3.0f;
 constexpr const char* triggerOscAddress = "/orbits/trigger";
 
@@ -581,7 +587,7 @@ void SpiralTrackComponent::mouseUp(const juce::MouseEvent& event)
     const auto drawnLine = juce::Line<float>(dragStart, dragCurrent);
     const auto pyFolder = juce::File::getCurrentWorkingDirectory().getChildFile("py");
     const auto initialBrowsePath = pyFolder.isDirectory() ? pyFolder : juce::File();
-    pendingFileChooser = std::make_unique<juce::FileChooser>("Choose a Python synth script", initialBrowsePath, "*.py");
+    pendingFileChooser = std::make_unique<juce::FileChooser>("Choose a synth source (.py or audio)", initialBrowsePath, "*.py;*.wav;*.aif;*.aiff;*.flac;*.mp3;*.ogg");
     pendingFileChooser->launchAsync(juce::FileBrowserComponent::openMode | juce::FileBrowserComponent::canSelectFiles,
                                     [this, drawnLine](const juce::FileChooser& chooser)
                                     {
@@ -617,7 +623,7 @@ void SpiralTrackComponent::mouseUp(const juce::MouseEvent& event)
                                                                fadeAlert->addButton("Cancel", 0);
 
                                                                fadeAlert->enterModalState(true,
-                                                                                          juce::ModalCallbackFunction::create(
+                                                                                           juce::ModalCallbackFunction::create(
                                                                                               [this, drawnLine, selectedPath, choice, fadeAlert](int result)
                                                                                               {
                                                                                                   if (result != 1)
@@ -2104,6 +2110,21 @@ void MainComponent::runExportWav(double exportSeconds)
                                                                       double durationSeconds,
                                                                       juce::File outFile) -> juce::AudioBuffer<float>
                                            {
+                                               juce::AudioBuffer<float> rendered;
+
+                                               if (isLikelyAudioFilePath(scriptPath))
+                                               {
+                                                   std::unique_ptr<juce::AudioFormatReader> reader(fm.createReaderFor(juce::File(scriptPath)));
+                                                   if (reader == nullptr)
+                                                       return rendered;
+
+                                                   const int n = static_cast<int>(reader->lengthInSamples);
+                                                   rendered.setSize(juce::jmax(1, static_cast<int>(reader->numChannels)), n);
+                                                   rendered.clear();
+                                                   reader->read(&rendered, 0, n, 0, true, true);
+                                                   return rendered;
+                                               }
+
                                                outFile.deleteFile();
                                                juce::ChildProcess proc;
 
@@ -2138,7 +2159,6 @@ void MainComponent::runExportWav(double exportSeconds)
                                                    ok = runArgs(argsLegacy);
                                                }
 
-                                               juce::AudioBuffer<float> rendered;
                                                if (!ok)
                                                    return rendered;
 
@@ -2181,12 +2201,16 @@ void MainComponent::runExportWav(double exportSeconds)
                                                                break;
 
                                                            int srcLimit = rendered.getNumSamples();
-                                                           if (line.scriptType == TriggerLineData::ScriptType::bar && line.cutToBarEnd)
+                                                           if (line.scriptType == TriggerLineData::ScriptType::bar)
                                                            {
-                                                               const auto barPos = phase * bars;
-                                                               const auto fracInBar = barPos - std::floor(barPos);
-                                                               const auto remain = juce::jmax(0.0, (1.0 - fracInBar) * barSeconds);
-                                                               srcLimit = juce::jmin(srcLimit, static_cast<int>(remain * exportSr));
+                                                               auto maxSeconds = barSeconds;
+                                                               if (line.cutToBarEnd)
+                                                               {
+                                                                   const auto barPos = phase * bars;
+                                                                   const auto fracInBar = barPos - std::floor(barPos);
+                                                                   maxSeconds = juce::jmax(0.0, (1.0 - fracInBar) * barSeconds);
+                                                               }
+                                                               srcLimit = juce::jmin(srcLimit, static_cast<int>(maxSeconds * exportSr));
                                                            }
 
                                                            const int dstStart = static_cast<int>(t0 * exportSr);
