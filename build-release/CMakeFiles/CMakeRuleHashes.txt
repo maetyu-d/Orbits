@@ -1,0 +1,3 @@
+# Hashes of file build rules.
+26703e6f2a7e2236ef8a58416691a9dc Orbits_artefacts/JuceLibraryCode/JuceHeader.h
+7760499b4c23e8e430c79d105a183f4b Orbits_artefacts/JuceLibraryCode/Orbits/PkgInfo
